@@ -116,7 +116,7 @@ async function renderModal (id){
     
                 <div class="f-elements">
                     <div class="w-100 text-center">
-                        <h2 class="text-grey capital"> ${data.weight} </h2>
+                        <h2 class="text-grey capital"> ${data.weight}Kg </h2>
                         <h4 class=" text-alternate">WEIGHT</h4>
                     </div>
                     <div class="w-100 text-center">
@@ -124,7 +124,7 @@ async function renderModal (id){
                         <h4 class=" text-alternate">TYPE</h4>
                     </div>
                     <div class="w-100 text-center">
-                        <h2 class="text-grey capital"> ${data.height} </h2>
+                        <h2 class="text-grey capital"> ${data.height}m </h2>
                         <h4 class=" text-alternate">HEIGHT</h4>
                     </div>
                 </div>
@@ -139,7 +139,7 @@ async function renderModal (id){
                         <h4 class=" text-alternate">ABILITIES</h4>
                     </div>
                     <div class="w-100 text-center">
-                        <h2 class="text-grey capital"> ${data.base_experience || "no tiene"}  </h2>
+                        <h2 class="text-grey capital"> ${data.base_experience || "no tiene"}Exp  </h2>
                         <h4 class=" text-alternate">EXPERIENCE</h4>
                     </div>
                 </div>
