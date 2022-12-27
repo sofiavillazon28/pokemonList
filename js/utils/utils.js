@@ -20,7 +20,7 @@ export const renderPokemons = (data, pokemon) => {
 
               <div class="card__content">
                   
-                  <div class="card__content-title box-card">
+                  <div class="card__content-title box-card text-center">
                       <h3 class="text-primary capital" >${name} </h3>
                       <h4 class="text-alternate">${types}</h4>
                       <span class="orderID">N° ${id}</span> 
