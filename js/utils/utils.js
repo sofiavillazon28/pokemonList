@@ -2,10 +2,13 @@ export const renderPokemons = (data, pokemon) => {
     const PokemonsContainer = document.getElementById('PokemonsContainer');
     PokemonsContainer.innerHTML = '';
 
-    data.forEach((element) => {
+    data.forEach(async (element) => {
       //const { id, name, status, species, type, gender, origin, location, image } = element;
         const { name, url } = element;
         const id = url.split("/").at(6)
+
+        const pokemon =  await fetchReadPokemon(id);
+        const types= pokemon.types.map(type => type.type.name).join(", ")
         //console.log(id)
         const imgUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`
 
@@ -19,7 +22,8 @@ export const renderPokemons = (data, pokemon) => {
                   
                   <div class="card__content-title box-card">
                       <h3 class="text-primary capital" >${name} </h3>
-                      <h4 class="text-alternate">${url}</h4>
+                      <h4 class="text-alternate">${types}</h4>
+                      <span class="orderID">N° ${id}</span> 
                       <br>
                   </div>
               </div>

@@ -65,12 +65,25 @@
 	top: -100px;
 	z-index: 1;
 }
+.orderID{
+	background-color: var(--primary-theme-color);
+	padding: 10px;
+	border-radius: 8px;
+	color: #fff;
+	position: relative;
+	top: -130px;
+	right: -140px;
 
+}
 .card__image {
 	z-index: 2;
+	text-align: center;
 	position: relative;
 }
 
+.card__image img{
+	width: 60%;
+}
 @keyframes zoom {
     from{
         transform: scale(1);
@@ -80,3 +93,4 @@
     }
     
 }
+
