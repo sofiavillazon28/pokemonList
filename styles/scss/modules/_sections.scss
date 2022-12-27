@@ -1,0 +1,73 @@
+.learnbox {
+	background-color: var(--white-text-color);
+	padding-top: 120px;
+	padding-bottom: 80px;
+}
+.learnbox-subtitle {
+	margin-bottom: 16px;
+}
+.learnbox-title {
+	margin-bottom: 16px;
+}
+.learnbox-text {
+	margin-bottom: 80px;
+}
+.stepbox-icon {
+	margin-bottom: 36px;
+}
+.stepbox-subtitle {
+	margin-bottom: 16px;
+}
+.stepbox-title {
+	margin-bottom: 8px;
+}
+.stepbox-text {
+	margin-bottom: 80px;
+}
+.couchexbox {
+	background-color: var(--secondary-paper-color);
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+.couchexbox-subtitle {
+	margin-bottom: 32px;
+}
+.couchexbox-joblist {
+	width: 100%;
+	height: 544px;
+	margin-bottom: 80px;
+	border: 1px dashed peru;
+}
+.subscribebox {
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+.subscribebox-subtitle {
+	margin-bottom: 24px;
+}
+.subscribebox-title {
+	margin-bottom: 24px;
+}
+.subscribebox-form {
+	input {
+		width: 180px;
+		cursor: pointer;
+		pointer-events: auto;
+		padding: 11px 10px 11px 15.5px;
+		border: 0;
+		border-radius: 8px 0px 0px 8px;
+	}
+	button {
+		border-radius: 0px 8px 8px 0px;
+		&:hover {
+			border-radius: 0px 8px 8px 0px;
+		}
+	}
+}
+@media (min-width: 768px) {
+	.subscribebox-form {
+		input {
+			width: 424px;
+		}
+	}
+}

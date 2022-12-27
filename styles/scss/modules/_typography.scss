@@ -1,0 +1,104 @@
+.h1,h1{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 64px;
+    margin-bottom: 0px;
+    margin-top:0px;
+}
+.h2,h2{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 64px;
+    margin-bottom: 0px;
+    margin-top:0px;
+}
+.h3,h3{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 0px;
+    margin-top:0px;
+}
+
+.h4,h4{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 0px;
+    margin-top:0px;
+}
+.h5,h5{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 0px;
+    margin-top:0px;
+}
+
+.p1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 0px;
+    margin-top:0px;
+}
+.p2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0px;
+    margin-top:0px;
+}
+.p3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    margin-bottom: 0px;
+    margin-top:0px;
+}
+.caption{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 0px;
+    margin-top:0px;
+    text-transform: capitalize;
+}
+
+/* color class */
+.text-primary{
+    color: var(--primary-text-color);
+}
+.text-secondary{
+    color: var(--secondary-text-color);
+}
+.text-alternate{
+    color: var(--alternate-text-color);
+}
+.text-grey{
+    color: var(--grey-dark-theme-color);
+}
+.text-white{
+    color: var(--white-text-color);
+}
+.capital{
+    text-transform: capitalize;
+}

@@ -1,0 +1,23 @@
+.search {
+	background-color: var(--white-text-color);
+	box-shadow: -16px 16px 56px -8px rgba(145, 158, 171, 0.16);
+	border-radius: 9px;
+	padding: 0.5rem;
+	margin-top: 48px;
+}
+.search-field {
+	cursor: pointer;
+	pointer-events: auto;
+	padding: 11px 10px 11px 15.5px;
+}
+select {
+	&::placeholder {
+		font-weight: bold;
+		opacity: .5;
+		color: red;
+	}
+}
+.search-input {
+	border: 0;
+	background-color: var(--white-text-color);
+}

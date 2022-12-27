@@ -1,0 +1,27 @@
+@import './modules/variables.css';
+@import './modules/header.css';
+@import './modules/layout.css';
+@import './modules/list.css';
+@import './modules/nav.css';
+@import './modules/utils.css';
+@import './modules/card.css';
+@import './modules/buttons.css';
+@import './modules/typography.css';
+@import './modules/texfields.css';
+@import './modules/animations.css';
+@import './modules/hero.css';
+@import './modules/search.css';
+@import './modules/stats.css';
+@import './modules/sections.css';
+@import './modules/footer.css';
+
+.body {
+  color: var(--primary-text-color);
+  font-family: var(--primary-font-family);
+  margin: 0;
+}
+
+.main {
+  background-color: var(--primary-theme-color);
+  overflow: hidden;
+}

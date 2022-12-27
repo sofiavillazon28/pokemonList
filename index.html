@@ -1,12 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokedex</title>
+    <title>List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/css/index2.css">
+ 
 </head>
-<body>
-    
+
+<body class="body">
+
+    <main>
+
+        <section class="section">
+            <div class="section-filter resp-form container f-elements gap-sm">
+                <div class="flex  gap-xl ">
+                    <a href="index.html">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1169/1169608.png" alt="" class="nav__logo"
+                            width="40" />
+                    </a>
+
+                </div>
+                <form class="pokemonInput" role="search" id="searchForm">
+                    <div class="textfield-icon w-60">
+                        <img src="./assets/images/icons/search-1.svg" alt="iconTextfield">
+                        <input class="textfield" type="search" name="name" id="name" 
+                            placeholder="¿Qué pokemon buscas?">
+                    </div>
+                    <div class="flex gap-sm">
+                        <button class="button button-secondary button-xl" type="submit">Buscar</button>
+                    </div>
+                </form>
+                
+            </div>
+        </section>
+        <section class="section section-cards">
+            <div class="container g-elements gap-md" id="PokemonsContainer">
+
+
+            </div>
+            <div class="container  gap-md">
+                <nav id="pagination">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item"><button class="page-link button button-primary"
+                                id="previousPokemon">Previous</button></li>
+                        <li class="page-item"><button class="page-link button button-primary"
+                                id="nextPokemon">Next</button></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        
+        <section class="modal" id="modal" role="dialog" >
+            <div id="overlay" class="overlay"></div>
+           
+            <div class="container g-elements gap-md" id="modal-content">
+                
+
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="footer__logo container f-elements">
+            <img src="https://cdn-icons-png.flaticon.com/512/1169/1169608.png" width="40" alt="">
+        </div>
+        <div class="footer__contact-info container f-elements">
+
+            <div class="footer__contact-left">
+
+                <p class="p3 text-grey">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    <br> © helps you build apps faster and better.
+                </p>
+                <ul class="footer__contact-list">
+                    <li><img src="./assets/images/icons/facebbook_outlined.svg" alt=""></li>
+                    <li><img src="./assets/images/icons/instagram_outlined.svg" alt=""></li>
+                    <li><img src="./assets/images/icons/iconbase.svg" alt=""></li>
+                    <li><img src="./assets/images/icons/iconbase-1.svg" alt=""></li>
+                </ul>
+            </div>
+            <div class="footer__contact-addres">
+                <div class="f-elements">
+                    <img src="./assets/images/icons/Message.svg" alt="">
+                    <p class="p3 text-primary"> info@pokemon.com</p>
+                </div>
+                <div class="f-elements">
+                    <img src="./assets/images/icons/map_marker.svg" alt="">
+                    <p class="p3 text-primary"> 655 Schaefer Dale</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer__contact-rights container f-elements align-center space-between">
+            <div>
+                <p class="p2 text-grey">© 2022 All rights reserved</p>
+            </div>
+            <div class="">
+                <ul class="footer__contact-links">
+                    <li><a href="http://">
+                            <p class="p3 text-grey">Help Center</p>
+                        </a></li>
+                    <li><a href="http://">
+                            <p class="p3 text-grey">Terms and conditions</p>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/index.js" type="module"></script>
+
 </body>
+
 </html>

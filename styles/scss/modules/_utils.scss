@@ -1,0 +1,190 @@
+.flex {
+	display: flex;
+  }
+  
+  .flex-row {
+	flex-direction: row;
+  }
+  
+  .flex-column {
+	flex-direction: column;
+  }
+  
+  .flex-wrap {
+	flex-flow: wrap;
+  }
+  
+  .justify-center {
+	justify-content: center;
+  }
+  
+  .self-center {
+	align-self: center;
+  }
+  
+  .items-center {
+	align-items: center;
+  }
+  
+  .justify-between {
+	justify-content: space-between;
+  }
+  
+  .justify-end {
+	justify-content: flex-end;
+  }
+  
+  .justify-evenly {
+	justify-content: space-evenly;
+  }
+  
+  .grid {
+	display: grid;
+  }
+  
+  .gap-xs {
+	gap: calc(var(--padding-section) * 0.25); /* 6px */
+  }
+  
+  .gap-sm {
+	gap: calc(var(--padding-section) * 0.5); /* 12px */
+  }
+  
+  .gap-md {
+	gap: var(--padding-section); /* 24px */
+  }
+  
+  .gap-lg {
+	gap: calc(var(--padding-section) * 1.5); /* 36px */
+  }
+  
+  .gap-xl {
+	gap: calc(var(--padding-section) * 2);  /* 48px */
+  }
+  
+  .divider-line {
+	border-left: 1px dashed rgba(145, 158, 171, 0.24);
+  }
+  
+  .h-full {
+	height: 100%;
+  }
+  
+  .border-dotted {
+	border-style: dotted;
+  }
+  
+  .width-fit-content {
+	width: fit-content;
+  }
+  
+  .decoration-none {
+	text-decoration: none;
+  }
+  
+  .m-0 {
+	margin: 0;
+  }
+  
+  .p-0 {
+	padding: 0;
+  }
+  
+  .mb-24 {
+	margin-bottom: 24px;
+  }
+  
+  .mt-120 {
+	margin-bottom: 0;
+  }
+  
+  .w-134 {
+	width: 100%
+  }
+  
+  .w-138 {
+	width: 100%;
+  }
+  
+  .w-176 {
+	width: 100%;
+  }
+  
+  .w-566 {
+	width: 100%;
+  }
+  
+  .w-full {
+	width: 100%;
+  }
+  
+  .appearance-none {
+	appearance: none;
+  }
+  
+  .text-center {
+	text-align: center;
+  }
+  
+  .hidden {
+	display: none
+  }
+  
+  .px-15 {
+	padding-left: var(--padding-container);
+	padding-right: var(--padding-container);
+  }
+  
+  .position-sticky {
+	position: sticky;
+  }
+  
+  .w-max {
+	width: 100%;
+  }
+  
+  @media (min-width: 768px) {
+	.md\:position-fixed {
+	  position: fixed;
+	}
+	  
+	.md\:px-0 {
+	  padding-left: 0;
+	  padding-right: 0;
+	}
+  
+	.md\:flex {
+	  display: flex
+	}
+	
+	.md\:block {
+	  display: block
+	}
+  
+	.md\:flex-row {
+	  flex-direction: row;
+	}
+  
+	.md\:w-566 {
+	  width: 566px;
+	}
+  
+	.w-134 {
+	  width: 8.375rem;
+	}
+	
+	.w-138 {
+	  width: 8.657rem; /* 138.512 */
+	}
+	
+	.w-176 {
+	  width: 11.032rem;  /* 176.512px */
+	}
+  
+	.md\:w-max {
+	  width: auto;
+	}
+	.mt-120 {
+	  margin-bottom: 120px;
+	}
+  }

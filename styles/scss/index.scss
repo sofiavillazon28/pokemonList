@@ -1,0 +1,24 @@
+@import "./modules/variables";
+
+@import "./modules/buttons";
+@import "./modules/card";
+@import "./modules/footer";
+@import "./modules/layout";
+@import "./modules/list";
+@import "./modules/utils";
+
+@import "./modules/search";
+@import "./modules/sections";
+@import "./modules/texfields";
+@import "./modules/typography";
+@import "./modules/pagination";
+@import "./modules/modal";
+
+.body {
+	color: var(--primary-text-color);
+	font-family: var(--primary-font-family);
+	margin: 0;
+}
+.main {
+	overflow: hidden;
+}
