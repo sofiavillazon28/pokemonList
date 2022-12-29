@@ -32,11 +32,9 @@ export const renderPokemons = (data, pokemon) => {
         document.querySelectorAll('.pokemon-modal').forEach(pokemon =>{
           pokemon.addEventListener('click',() => {
             var modal = document.getElementById('modal');
-            //var modalBtn = document.getElementById('modalBtn');
             
             var id = pokemon.dataset.id
             renderModal(id);
-            //modalBtn.addEventListener('click', openModal);
 
             modal.classList.add('open');
             
@@ -51,16 +49,16 @@ export const renderPokemons = (data, pokemon) => {
 
   
 
-  export const fetchReadPokemons = async (page = 0) => {
-    var offset = page*20
+  export const fetchReadPokemons = async (page) => {
+    var offset = 0
     var limit = offset+20
     try {
+      offset = 20 * page
       //const { data } = await axios.get(`https://rickandmortyapi.com/api/character/?page=${page}&name=${name}`);
       const { data } = await axios.get(`https://pokeapi.co/api/v2/pokemon/?offset=${offset}&limit=${limit}`);
-      //console.log(data)
-        
+      console.log("page en function; "+page)
       return data.results;
-    
+      
     } catch (error) {
       console.log(error);
     } finally {
@@ -73,7 +71,6 @@ export const renderPokemons = (data, pokemon) => {
     try {
       //const { data } = await axios.get(`https://rickandmortyapi.com/api/character/?page=${page}&name=${name}`);
       const { data } = await axios.get(`https://pokeapi.co/api/v2/pokemon/${id}`);
-      console.log(data)
         
       return data;
     
@@ -92,7 +89,7 @@ async function renderModal (id){
 
     const data =  await fetchReadPokemon(id);
     const imgUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`
-    console.log(data)
+    
     const types= data.types.map(type => type.type.name).join(", ")
     const moves= data.moves.map(move => move.move.name).join(`</div> <div class="tagMove"> `)
     const abilities = data.abilities.map(abilities => abilities.ability.name).join(",")
@@ -196,9 +193,6 @@ async function renderModal (id){
       elm.style.width = perc
     })
 
-    
-
-
     var closeBtn = document.getElementById('overlay');
     closeBtn.addEventListener('click', closeModal);
     
@@ -207,20 +201,3 @@ async function renderModal (id){
     }
 
   }
-//function getPokemonImage(name) {
-//    let apiUrl = "https://pokeapi.co/api/v2/pokemon/";
-//    var img = new Image();
-//
-//    try {
-//        axios.get(apiUrl + name).then(function (response) {
-//       //     console.log(response.data);
-//            img.src = response.data.sprites.other['official-artwork'].front_default;
-//            //img.src = response.data.sprites.front_default;
-//            document.getElementById(name).appendChild(img)
-//        })  
-//    } catch (error) {
-//      console.log(error);
-//    } finally {
-//     //console.log("cargó correctamente");
-//    }
-//};
