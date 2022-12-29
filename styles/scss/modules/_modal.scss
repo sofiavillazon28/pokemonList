@@ -1,8 +1,7 @@
 .modal{
     position: absolute;
-    width: 1200px;
+    width: 100%;
     top: 20px;
-    left: calc(50% - 600px);
     margin: 0 auto;
     display: none;
     
@@ -14,21 +13,23 @@
 .overlay {
     position: fixed;
     background-color: rgba(68, 68, 68, 0.55);
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     top:0px;
     left:0px;
-    z-index: 5;
+    z-index: 2;
     backdrop-filter: blur(15px);
 }
-
-.card-modal__content-title {
-    padding: 80px;
+.container-modal{
+    position: relative;
+    display: block;
+    width: 100%;
+    z-index: 2;
 }
+
 .card-modal {
     z-index: 5;
-	position: absolute;
-    width: 1200px;
+    width: 100%;
 	cursor: pointer;
 	&:hover img{
 		animation: zoom 0.5s ease-in-out 0s 2 alternate;
@@ -48,14 +49,15 @@
 .card__image-modal {
     position: relative;
 	z-index: 2;
-    left: calc(50% - 235px);
+    width: 100%;
+    text-align: center;
 }
 .divider{
     width: 100%;
     height: 1px;
     background-color: var(--primary-shadow-color);
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 43px;
+    margin-bottom: 0;
 }
 
 .skill-name {
@@ -67,8 +69,9 @@
 		height: 0.5rem;
         max-width:100%!important ;
 		position: relative;
-		top: -5px;
 		width: 100%;
+        top: 8px;
+        opacity: 0.4;
 	}
 }
 .open{ 
@@ -77,8 +80,6 @@
 	font-size: 0;
     border-radius: 8px;
 	height: 0.5rem;
-	position: relative;
-	top: -0.8rem;
 	transition: 1s linear;
     animation-direction: revert;
 	width: 0;
@@ -90,3 +91,43 @@
 	background-color: var(--alternate-theme-color);
 }
 
+.card-modal__content-title {
+    padding: 90px 20px 20px 20px;
+}
+.card-modal__content-title h3{
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+}
+@media (min-width:768px) {
+    .container-modal{
+        position: relative;
+        display: block;
+        width: 80%;
+        z-index: 2;
+        margin: 0 auto;
+  
+    }
+    .card-modal__content-title {
+        padding: 80px;
+    }
+    
+}
+
+#closeModal{
+    font-size: 42px;
+    width: 100%;
+    text-align: right;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+#closeModal:hover{
+    font-size: 42px;
+    width: 100%;
+    text-align: right;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}

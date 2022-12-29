@@ -56,11 +56,22 @@
 }
 .resp-flex {
 	width: 95%;
+	
+}
+.r-elements {
+	display: block;
+	& > div{
+		padding-top: 40px;
+	}
 }
 @media (min-width:768px) {
 	.g-elements {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
+	}
+	
+	.r-elements {
+		display: flex;
 	}
 	.section-cards {
 		background-color: var(--secondary-paper-color);

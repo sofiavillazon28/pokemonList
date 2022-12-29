@@ -97,6 +97,7 @@ async function renderModal (id){
         ModalContent.innerHTML += `
         
         <article class="card-modal">
+        <div id="closeModal">X</div>
         <div class="card__image-modal " id="${data.name}" >
             <img src="${imgUrl}" alt="${data.name}">
         </div>
@@ -111,7 +112,7 @@ async function renderModal (id){
     
                 <div class="divider"> </div>
     
-                <div class="f-elements">
+                <div class="r-elements">
                     <div class="w-100 text-center">
                         <h2 class="text-grey capital"> ${data.weight}Kg </h2>
                         <h4 class=" text-alternate">WEIGHT</h4>
@@ -126,7 +127,7 @@ async function renderModal (id){
                     </div>
                 </div>
                 <div class="divider"> </div>
-                <div class="f-elements">
+                <div class="r-elements">
                     <div class="w-100 text-center">
                         <h2 class="text-grey capital"> ${data.order} </h2>
                         <h4 class=" text-alternate">ORDER</h4>
@@ -193,7 +194,10 @@ async function renderModal (id){
       elm.style.width = perc
     })
 
-    var closeBtn = document.getElementById('overlay');
+    var closeOverlay = document.getElementById('overlay');
+    var closeBtn = document.getElementById('closeModal');
+
+    closeOverlay.addEventListener('click', closeModal);
     closeBtn.addEventListener('click', closeModal);
     
     function closeModal(){
